@@ -28,15 +28,19 @@ namespace MvvmSampleXF
                     .AddSingleton<IFilesService, FileService>()
                     .AddSingleton<ISettingsService, SettingsService>()
                     .AddSingleton(RestService.For<IRedditService>("https://www.reddit.com/"))
-                    //ViewModels
+                    //Widget ViewModels
                     .AddTransient<PostWidgetViewModel>()
                     .AddTransient<SubredditWidgetViewModel>()
+                    .AddTransient<PostWidgetNoMessageViewModel>()
+                    .AddTransient<SubredditWidgetNoMessageViewModel>()
+                    //Page ViewModels
                     .AddTransient<AsyncRelayCommandPageViewModel>()
                     .AddTransient<IocPageViewModel>()
                     .AddTransient<MessengerPageViewModel>()
                     .AddTransient<ObservableObjectPageViewModel>()
                     .AddTransient<RelayCommandPageViewModel>()
                     .AddTransient<SamplePageViewModel>()
+                    .AddTransient<RedditBrowserNoMessagePageViewModel>()
                     .BuildServiceProvider();
 
                 Ioc.Default.ConfigureServices(serviceProvider);

@@ -147,6 +147,9 @@
     <Compile Include="Views\ObservableValidatorPage.xaml.cs">
       <DependentUpon>ObservableValidatorPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\RedditBrowserNoMessagePage.xaml.cs">
+      <DependentUpon>RedditBrowserNoMessagePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\RedditServicePage.xaml.cs">
       <DependentUpon>RedditServicePage.xaml</DependentUpon>
     </Compile>
@@ -183,8 +186,14 @@
     <Compile Include="Views\ObservableObjectPage.xaml.cs">
       <DependentUpon>ObservableObjectPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Widgets\PostNoMessageWidget.xaml.cs">
+      <DependentUpon>PostNoMessageWidget.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Widgets\PostWidget.xaml.cs">
       <DependentUpon>PostWidget.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Widgets\SubredditNoMessageWidget.xaml.cs">
+      <DependentUpon>SubredditNoMessageWidget.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Widgets\SubredditWidget.xaml.cs">
       <DependentUpon>SubredditWidget.xaml</DependentUpon>
@@ -310,6 +319,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Views\RedditBrowserNoMessagePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\RedditServicePage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -358,7 +371,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Widgets\PostNoMessageWidget.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\Widgets\PostWidget.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Widgets\SubredditNoMessageWidget.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

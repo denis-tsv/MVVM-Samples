@@ -42,7 +42,8 @@ public sealed partial class Shell : UserControl
             new SampleEntry(SettingsServiceItem, typeof(SettingsServicePage), "Settings service"),
             new SampleEntry(RedditServiceItem, typeof(RedditServicePage), "Reddit service"),
             new SampleEntry(BuildingTheUIItem, typeof(BuildingTheUIPage), "Building the UI"),
-            new SampleEntry(FinalResultItem, typeof(RedditBrowserPage), "Reddit browser")
+            new SampleEntry(FinalResultItem, typeof(RedditBrowserPage), "Reddit browser"),
+            new SampleEntry(FinalResultNoMessageItem, typeof(RedditBrowserNoMessagePage), "Reddit browser (no message)")
         };
 
         // Set the custom title bar to act as a draggable region

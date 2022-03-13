@@ -8,5 +8,6 @@
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0-preview2" />
     <PackageReference Include="Nito.AsyncEx.Coordination" Version="5.1.2" />
     <PackageReference Include="Refit" Version="6.3.2" />
+    <PackageReference Include="System.Reactive" Version="5.0.0" />
   </ItemGroup>
 </Project>

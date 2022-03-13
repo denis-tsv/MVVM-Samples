@@ -48,17 +48,21 @@ sealed partial class App : Application
                 .AddSingleton<IFilesService, FilesService>()
                 .AddSingleton<ISettingsService, SettingsService>()
                 .AddSingleton(RestService.For<IRedditService>("https://www.reddit.com/"))
-                //ViewModels
+                //Widget ViewModels
                 .AddTransient<PostWidgetViewModel>()
                 .AddTransient<SubredditWidgetViewModel>()
+                .AddTransient<PostWidgetNoMessageViewModel>()
+                .AddTransient<SubredditWidgetNoMessageViewModel>()
+                .AddTransient<ValidationFormWidgetViewModel>()
+                //Page ViewModels
                 .AddTransient<AsyncRelayCommandPageViewModel>()
                 .AddTransient<IocPageViewModel>()
                 .AddTransient<MessengerPageViewModel>()
                 .AddTransient<ObservableObjectPageViewModel>()
                 .AddTransient<ObservableValidatorPageViewModel>()
-                .AddTransient<ValidationFormWidgetViewModel>()
                 .AddTransient<RelayCommandPageViewModel>()
                 .AddTransient<SamplePageViewModel>()
+                .AddTransient<RedditBrowserNoMessagePageViewModel>()
                 .BuildServiceProvider();
 
             // Register services

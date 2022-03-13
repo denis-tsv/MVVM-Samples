@@ -148,6 +148,11 @@
                             Content="The final result!"
                             Icon="{ui:FontIcon Glyph=&#xF1AD;}"
                             ToolTipService.ToolTip="The final working sample!" />
+                        <muxc:NavigationViewItem
+                            x:Name="FinalResultNoMessageItem"
+                            Content="The final result (no message)!"
+                            Icon="{ui:FontIcon Glyph=&#xF1AD;}"
+                            ToolTipService.ToolTip="The final working sample without messages!" />
                     </muxc:NavigationViewItem.MenuItems>
                 </muxc:NavigationViewItem>
             </muxc:NavigationView.MenuItems>

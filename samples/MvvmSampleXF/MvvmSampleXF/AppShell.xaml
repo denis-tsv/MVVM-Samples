@@ -64,4 +64,8 @@
 	<ShellContent Title="The Final Result!"
 				  Icon="{StaticResource CheckerIcon}"
 				  ContentTemplate="{DataTemplate views:RedditBrowserPage}" />
+
+    <ShellContent Title="The Final Result (no message)!"
+                  Icon="{StaticResource CheckerIcon}"
+                  ContentTemplate="{DataTemplate views:RedditBrowserNoMessagePage}" />
 </Shell>
